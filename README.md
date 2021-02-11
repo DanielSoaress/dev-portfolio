@@ -1,24 +1,24 @@
-# dev-portfolio
+# Portfólio
 
-## Project setup
-```
-yarn install
-```
+## 🚀 Tecnologias
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-### Compiles and minifies for production
-```
-yarn build
-```
+- [Vue.js](https://vuejs.org/);
+- [Vuex](https://vuex.vuejs.org/);
+- [Vue Router](https://router.vuejs.org/);
+- [BootstrapVue](https://bootstrap-vue.org/);
 
-### Lints and fixes files
-```
-yarn lint
-```
+## 💻 Projeto
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Aplicação Web com intuito de mostrar meus projetos ao longo da carreira.
+
+## 🧠 Desafio
+
+- State Management Pattern
+- Router
+- Responsive
+- Framework Javascript
+
+
+Feito com ♥ by Daniel Soares :wave:
