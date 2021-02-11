@@ -4,10 +4,10 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- [Vue.js](https://vuejs.org/);
-- [Vuex](https://vuex.vuejs.org/);
-- [Vue Router](https://router.vuejs.org/);
-- [BootstrapVue](https://bootstrap-vue.org/);
+- [Vue.js](https://vuejs.org/)
+- [Vuex](https://vuex.vuejs.org/)
+- [Vue Router](https://router.vuejs.org/)
+- [BootstrapVue](https://bootstrap-vue.org/)
 
 ## 💻 Projeto
 
