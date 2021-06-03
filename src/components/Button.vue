@@ -18,6 +18,7 @@ export default {
 .btn-custom:hover {
   background-color: #d9763d2d!important;
   border-color: #D9763D!important;
+  box-shadow: 0px 0px 1rem  black;
 }
 
 </style>

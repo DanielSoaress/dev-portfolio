@@ -24,6 +24,8 @@ export default {
 <style scoped>
 header {
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
 .navbar-dark .navbar-nav .nav-link {

@@ -1,6 +1,7 @@
 <template>
-  <b-container class="fluid-custom">
-        <b-row class="mb-5"> 
+  <b-container  class="fluid-custom">
+      <Particles />
+        <b-row > 
           <b-row class="d-lg-none hidden-custom align-center-custom w-100">
               <b-img width="250" height="250" :src="require('../assets/Programmingpana.png')" fluid alt="Responsive image"></b-img>
           </b-row>
@@ -12,28 +13,18 @@
               <Button class='mt-3' to="about" txt="SABER MAIS"/>
             </div>
           </b-col>
-          <b-col class="d-none d-lg-block d-print-block">
-            <b-img width="500" height="500" :src="require('../assets/Programmingpana.png')" fluid alt="Responsive image"></b-img>
-          </b-col>
         </b-row>
-
-        <footer class="mt-1">
-          <a class="mr-3" href="https://github.com/DanielSoaress" >            
-            <b-img width="30" height="30" :src="require('../assets/github.png')"></b-img>
-          </a>
-          <a class="ml-3" href="https://www.linkedin.com/in/daniel-soares-26b718145/" >            
-            <b-img width="30" height="30" :src="require('../assets/linkedin.png')"></b-img>
-          </a>
-        </footer>
   </b-container>
 </template>
 
 <script>
 import Button from "@/components/Button"
+import Particles from "@/components/Particles"
 
 export default {
   components: {
-    Button
+    Button,
+    Particles
   }
 }
 </script>
@@ -45,7 +36,7 @@ export default {
   align-items: center;
   flex-direction: column;
   margin-bottom: 10px;
-  height: 85vh;
+  height: 80vh;
 }
 
 .align-center-custom {

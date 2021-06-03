@@ -12,6 +12,8 @@
     "bootstrap": "^4.5.3",
     "bootstrap-vue": "^2.21.1",
     "core-js": "^3.6.5",
+    "particles.vue": "^2.10.0",
+    "three": "^0.128.0",
     "vue": "^2.6.12",
     "vue-router": "^3.4.9"
   },
