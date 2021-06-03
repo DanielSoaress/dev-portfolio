@@ -44,7 +44,7 @@ export default {
     }
     .card-text {
         font-size: 0.75rem;
-        text-align: justify;
+        text-align: center;
     }
     .card-about-img {
         width: 100%;
