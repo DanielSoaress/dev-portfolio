@@ -25,6 +25,8 @@ export default {
   mounted: function () { 
    this.$route.path == '/' ? this.isHome = true  : this.isHome = false 
    this.$route.path == '/card' ? this.showMenu = false  : this.showMenu = true 
+   this.$route.path == '/curriculo' ? this.showMenu = false  : this.showMenu = true 
+
   },
   watch: {
     $route(to) {
