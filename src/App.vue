@@ -5,7 +5,7 @@
     </div>
     <Menu v-show="showMenu" class="animate__animated animate__fadeInDown"/>
     <router-view class="animate__animated animate__fadeIn"></router-view>
-    <Footer v-show="isHome" />
+    <Footer v-show="isHome" class="animate__animated animate__fadeInUp"/>
   </div>
 </template>
 
@@ -63,9 +63,15 @@ export default {
 .spline {
   position: absolute;
   width: 100vw;
-  height: 100vh;
-
+  height: 100%;
 }
+
+@media(max-width: 768px) {
+  .spline {
+    height: 103%;
+  }
+}
+
 </style>
 
 

@@ -4,10 +4,12 @@
         <b-row > 
           <b-col class="d-flex align-items-center">
             <div>
-              <p class="mb-0 pb-0 text-left custom-p">Olá,</p>
-              <h1 class="mt-0 pt-0 text-justify custom-h1">Eu sou Daniel</h1>
-              <p class="text-center custom-p">Desenvolvedor de sistemas com foco em desenvolvimento web.</p>
-              <Button class='mt-3' to="about" txt="SABER MAIS"/>
+              <div id="container-home" v-scrollanimation>
+                <p class="mb-0 pb-0 text-left custom-p">Olá,</p>
+                <h1 class="mt-0 pt-0 text-justify custom-h1">Eu sou Daniel</h1>
+                <p class="text-center custom-p">Desenvolvedor de sistemas com foco em desenvolvimento web.</p>
+              </div>
+              <Button id="btn-home" class='mt-3' v-scrollanimation to="about" txt="SABER MAIS"/>
             </div>
           </b-col>
         </b-row>
@@ -27,6 +29,7 @@ export default {
 </script>
 
 <style>
+/* Estilo global */
 .fluid-custom {
   display: flex;
   justify-content: center;
@@ -54,3 +57,27 @@ export default {
 }
 </style>
 
+<style >
+    /* Estilo local */
+    #container-home.before-enter {
+        opacity: 0;
+        transform: translatex(-100px);
+        transition: all 1s ease-out;
+    }
+
+    #container-home.enter {
+        opacity: 1;
+        transform: translatex(0px);
+    }
+
+    #btn-home.before-enter {
+        opacity: 0;
+        transform: translatex(100px);
+        transition: all 1s ease-out;
+    }
+
+    #btn-home.enter {
+        opacity: 1;
+        transform: translatex(0px);
+    }
+</style>
