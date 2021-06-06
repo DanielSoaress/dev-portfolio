@@ -26,18 +26,23 @@ export default {
     Menu,
     Footer
   },
+  methods: {
+    rulesRoute(path) {
+      path == '/' ? this.isHome = true  : this.isHome = false 
+      if(path == '/card' || path == '/curriculo') 
+        this.showMenu = false
+      else
+        this.showMenu = true 
+      path == '/contact' ? this.showSpline = true  : this.showSpline = false 
+    }
+  },
   mounted: function () { 
-   this.$route.path == '/' ? this.isHome = true  : this.isHome = false 
-   this.$route.path == '/card' ? this.showMenu = false  : this.showMenu = true 
-   this.$route.path == '/curriculo' ? this.showMenu = false  : this.showMenu = true 
-   this.$route.path == '/contact' ? this.showSpline = true  : this.showSpline = false 
+    this.rulesRoute(this.$route.path)
 
   },
   watch: {
     $route(to) {
-        to.path == '/' ? this.isHome = true  : this.isHome = false
-        to.path == '/contact' ? this.showSpline = true  : this.showSpline = false 
-
+      this.rulesRoute(to.path)
     }
   },
 }
