@@ -11,5 +11,10 @@
 <style>
 .curriculo-container {
   max-width: 100vw;
+  height: 100vh;
+}
+
+.curriculo-img {
+  position: absolute;
 }
 </style>
